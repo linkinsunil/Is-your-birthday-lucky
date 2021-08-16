@@ -5,10 +5,18 @@ const message = document.querySelector("#message")
 
 button.addEventListener("click", checkLuckyBirthDay)
 
+function compareValues(sum, luckyNumber){
+    if(sum % luckyNumber === 0){
+        message.innerText = "Yay, your birthday is lucky for you :)"
+    } else {
+        message.innerText = "Uh oh! your birthday is not so lucky for you :("
+    }
+}
+
 function checkLuckyBirthDay(){
     const dob = birthDay.value;
     const sum = calculateSum(dob)
-    console.log(sum)
+    compareValues(sum, luckyNumber.value)
 }
 
 function calculateSum (dob){
