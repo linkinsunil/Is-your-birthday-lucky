@@ -1,0 +1,17 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    max-width: 50vw;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+input{
+    margin: .5rem 0rem 2rem 0rem;
+    padding: .5rem;
+}
+button{
+    padding: .5rem 2rem;
+}
